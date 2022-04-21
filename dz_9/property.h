@@ -17,6 +17,7 @@ public:
 		this->worth = worth;
 	}
 	virtual double Tax() = 0;
+	virtual int Get_worth() { return worth;}
 };
 
 class Apartament : public Property {
@@ -26,7 +27,7 @@ public:
 
 	}
 	Apartament(double worth) :Property(worth) {
-		this->worth = worth;
+		//this->worth = worth;
 	}
 	double Tax() override;
 };
