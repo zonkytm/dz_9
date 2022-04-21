@@ -27,7 +27,7 @@ public:
 
 	}
 	Apartament(double worth) :Property(worth) {
-		//this->worth = worth;
+
 	}
 	double Tax() override;
 };
@@ -39,7 +39,7 @@ public:
 	Car():Property() {
 	}
 	Car(double worth) : Property(worth) {
-		this->worth = worth;
+
 	}
 	double Tax() override;
 };
@@ -49,7 +49,7 @@ public:
 	CountryHouse():Property(){}
 
 	CountryHouse(double worth) : Property(worth) {
-		this->worth = worth;
+
 	}
 	double Tax() override;
 };
